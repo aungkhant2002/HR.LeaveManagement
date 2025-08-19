@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36327.8 d17.14
+VisualStudioVersion = 17.14.36327.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -15,7 +15,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{9E18896D-E14E-41E1-9093-FC8B4348BB63}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR.LeaveManagement.Domain", "HR.LeaveManagement.Domain\HR.LeaveManagement.Domain.csproj", "{47B7836B-1BAB-4759-8C6F-CE0944D1B1DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR.LeaveManagement.Application", "HR.LeaveManagement.Application\HR.LeaveManagement.Application.csproj", "{9E666FF0-4C0C-4F94-BB83-FC5654A70CDE}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47B7836B-1BAB-4759-8C6F-CE0944D1B1DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47B7836B-1BAB-4759-8C6F-CE0944D1B1DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47B7836B-1BAB-4759-8C6F-CE0944D1B1DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47B7836B-1BAB-4759-8C6F-CE0944D1B1DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E666FF0-4C0C-4F94-BB83-FC5654A70CDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E666FF0-4C0C-4F94-BB83-FC5654A70CDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E666FF0-4C0C-4F94-BB83-FC5654A70CDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E666FF0-4C0C-4F94-BB83-FC5654A70CDE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -24,6 +42,8 @@ Global
 		{D6EB300A-AB7C-4DA8-A112-8AB90B4C359E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{68151903-AA88-46A1-BB30-BA957432A974} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{9E18896D-E14E-41E1-9093-FC8B4348BB63} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{47B7836B-1BAB-4759-8C6F-CE0944D1B1DB} = {D6EB300A-AB7C-4DA8-A112-8AB90B4C359E}
+		{9E666FF0-4C0C-4F94-BB83-FC5654A70CDE} = {D6EB300A-AB7C-4DA8-A112-8AB90B4C359E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3D74C6DA-0D0B-4EC7-9435-CBF40E70836F}
