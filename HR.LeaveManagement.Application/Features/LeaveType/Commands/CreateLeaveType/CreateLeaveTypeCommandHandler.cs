@@ -17,17 +17,15 @@ public class CreateLeaveTypeCommandHandler : IRequestHandler<CreateLeaveTypeComm
 
     public async Task<int> Handle(CreateLeaveTypeCommand request, CancellationToken cancellationToken)
     {
-        //Validate incoming data
+        // Validate incoming data
 
-        //Convert to domain entity object
+        // Convert to domain entity object
         var leaveTypeToCreate = _mapper.Map<Domain.LeaveType>(request);
 
-        //Add to database
+        // Add to database
         await _leaveTypeRepository.CreateAsync(leaveTypeToCreate);
 
-        //return record id
+        // return record id
         return leaveTypeToCreate.Id;
-
-        throw new NotImplementedException();
     }
 }

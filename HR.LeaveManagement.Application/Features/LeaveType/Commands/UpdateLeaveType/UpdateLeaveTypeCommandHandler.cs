@@ -17,17 +17,15 @@ public class UpdateLeaveTypeCommandHandler : IRequestHandler<UpdateLeaveTypeComm
 
     public async Task<Unit> Handle(UpdateLeaveTypeCommand request, CancellationToken cancellationToken)
     {
-        //Validate incoming data
+        // Validate incoming data
 
-        //Convert to domain entity object
+        // Convert to domain entity object
         var leaveTypeToUpdate = _mapper.Map<Domain.LeaveType>(request);
 
-        //Add to database
+        // Add to database
         await _leaveTypeRepository.UpdateAsync(leaveTypeToUpdate);
 
-        //return record id
+        // return record id
         return Unit.Value;
-
-        throw new NotImplementedException();
     }
 }

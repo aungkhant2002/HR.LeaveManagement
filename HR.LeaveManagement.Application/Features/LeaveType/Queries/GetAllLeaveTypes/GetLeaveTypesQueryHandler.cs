@@ -17,13 +17,13 @@ public class GetLeaveTypesQueryHandler : IRequestHandler<GetLeaveTypesQuery, Lis
 
     public async Task<List<LeaveTypeDto>> Handle(GetLeaveTypesQuery request, CancellationToken cancellationToken)
     {
-        //Query the database
+        // Query the database
         var leaveTypes = await _leaveTypeRepository.GetAsync();
 
-        //Convert data objects to DTO objects
+        // Convert data objects to DTO objects
         var data = _mapper.Map<List<LeaveTypeDto>>(leaveTypes);
 
-        //Return list of DTO object
+        // Return list of DTO object
         return data;
     }
 }
